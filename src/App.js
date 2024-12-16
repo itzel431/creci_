@@ -3,7 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './Login';
 import Diario from './Diario';  
-import Momentos from './Momentos';  // Importamos el componente Momentos
+import Momentos from './Momentos';  
+import Salud from './Salud';  // Importamos el componente Salud
 import logo from './images/logocreci.jpg';  
 
 function App() {
@@ -67,8 +68,8 @@ function App() {
         <Routes>
           <Route path="/diario" element={<Diario />} />
           <Route path="/momentos" element={<Momentos />} />
+          <Route path="/salud" element={<Salud />} />
           {/* Aquí podrías agregar otras rutas futuras */}
-          {/* <Route path="/salud" element={<Salud />} /> */}
           {/* <Route path="/lactancia" element={<Lactancia />} /> */}
         </Routes>
       </div>
