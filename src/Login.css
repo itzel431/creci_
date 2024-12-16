@@ -1,0 +1,46 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7e5e9; /* Fondo rosa */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #6b4f88;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #6b4f88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8e609a;
+  }
+  
