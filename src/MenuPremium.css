@@ -1,0 +1,120 @@
+/* Contenedor principal */
+.menu-premium-container {
+    background-color: #f8c6d4;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .app-header {
+    background-color: #f76c9e;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .app-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .app-header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .back-button {
+    background-color: #f76c9e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .back-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #f54b7b;
+    transform: scale(1.05);
+  }
+  
+  .premium-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .section:hover {
+    background-color: #f76c9e;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .section span {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+  }
+  
+  .premium-exclusive {
+    background-color: #ffefc0;
+    border: 2px solid #f5a623;
+  }
+  
+  .premium-exclusive:hover {
+    background-color: #f5a623;
+    color: white;
+  }
+  
+  .whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+  }
+  
+  .whatsapp-button span {
+    font-size: 2.5rem;
+    margin-right: 10px;
+  }
+  
