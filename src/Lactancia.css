@@ -1,0 +1,48 @@
+.lactancia-container {
+    padding: 20px;
+  }
+  
+  .back-button {
+    background-color: #f76c9e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .timer-display {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .start-button, .pause-button, .reset-button {
+    background-color: #f76c9e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .start-button:hover, .pause-button:hover, .reset-button:hover {
+    background-color: #f54b7b;
+  }
+  
+  .pause-records .pause-record {
+    background-color: #f8c6d4;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .pause-record p {
+    margin: 5px 0;
+  }
+  
