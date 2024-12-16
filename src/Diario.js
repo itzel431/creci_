@@ -14,12 +14,38 @@ function Diario() {
     setNote(''); // Limpiar el campo de nota
   };
 
+  const handleOpenNote = (note) => {
+    // Crear el contenido de la nueva ventana
+    const noteContent = `
+      <html>
+        <head>
+          <title>Nota del Diario</title>
+          <style>
+            body { font-family: 'Poppins', sans-serif; padding: 20px; background-color: #f8c6d4; }
+            .note { font-size: 18px; margin-bottom: 15px; }
+            .note small { color: gray; font-size: 14px; }
+          </style>
+        </head>
+        <body>
+          <div class="note">
+            <p>${note.text}</p>
+            <small>${note.date}</small>
+          </div>
+        </body>
+      </html>
+    `;
+    // Abrir la nueva ventana
+    const newWindow = window.open();
+    newWindow.document.write(noteContent);
+    newWindow.document.close();
+  };
+
   return (
     <div className="diario-container">
       <button className="back-button">
         <Link to="/">Volver al inicio</Link>
       </button>
-      
+
       <h2>Notas del Diario</h2>
 
       <textarea
@@ -34,7 +60,7 @@ function Diario() {
 
       <div className="notes-list">
         {notes.map((note, index) => (
-          <div key={index} className="note">
+          <div key={index} className="note" onClick={() => handleOpenNote(note)}>
             <p>{note.text}</p>
             <small>{note.date}</small>
           </div>

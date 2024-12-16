@@ -47,15 +47,15 @@
 }
 
 .app-header h1 {
-  font-size: 3.5rem;  /* Tamaño de letra más grande */
+  font-size: 3.5rem;
   margin: 0;
-  font-weight: 600;  /* Negritas */
+  font-weight: bold;
 }
 
 .app-header p {
   font-size: 1.8rem;
   margin-top: 10px;
-  font-weight: 400;  /* Normal */
+  font-weight: 500;
 }
 
 /* Estilos de los apartados */
@@ -68,66 +68,100 @@
 }
 
 .section {
-  background-color: #f8c6d4; /* Rosa claro */
+  background-color: #f8c6d4;  /* Rosa claro */
+  padding: 20px;
   text-align: center;
-  padding: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: bold; /* Negritas */
-  font-size: 1.2rem;  /* Tamaño de letra más grande */
   transition: all 0.3s ease;
 }
 
 .section:hover {
-  background-color: #f54b7b; /* Rosa más oscuro */
-  transform: scale(1.1);
-  color: white;
+  background-color: #f76c9e; /* Rosa más oscuro */
+  transform: scale(1.05);  /* Animación de botón */
 }
 
+.section i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Estilos para el apartado Diario */
 .diario-section {
-  padding: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
 }
 
 .diario-section h2 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.diario-section .note {
-  background-color: #f8c6d4; /* Rosa claro */
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 400;
+.diario-section textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
 }
 
-.diario-section .note p {
-  font-size: 1rem;
-  margin: 5px 0;
-}
-
-.diario-section .note .date {
-  font-size: 0.9rem;
-  color: #777;
-}
-
-button.back-button {
+.diario-section button {
   background-color: #f76c9e;
   color: white;
   border: none;
   padding: 15px 30px;
   font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
   border-radius: 10px;
-  transition: all 0.3s ease;
   margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.diario-section button:hover {
+  background-color: #f54b7b; /* Rosa más oscuro */
+}
+
+.diario-section .note {
+  background-color: #f8c6d4;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.diario-section .note span {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.diario-section .note time {
+  display: block;
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Botón volver al inicio */
+.back-button {
+  background-color: #f76c9e;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
   font-family: 'Poppins', sans-serif;
 }
 
-button.back-button:hover {
-  transform: scale(1.1);
-  background-color: #f54b7b;
+.back-button:hover {
+  background-color: #f54b7b; /* Rosa más oscuro */
+  transform: scale(1.05);
 }

@@ -1,60 +1,166 @@
+/* Contenedor principal del diario */
 .diario-container {
-    padding: 20px;
-    background-color: #f8c6d4;  /* Rosa claro */
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
   }
   
+  /* Encabezado del diario */
   .diario-container h2 {
-    font-size: 2rem;
-    color: black;
+    font-size: 2.2rem;
+    font-weight: bold;
     text-align: center;
+    color: #f76c9e;
+    margin-bottom: 20px;
   }
   
-  .diario-textarea {
+  /* Textarea para escribir notas */
+  textarea {
     width: 100%;
-    height: 150px;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    height: 120px;
+    padding: 15px;
     font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #f76c9e;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s ease;
   }
   
+  textarea:focus {
+    border-color: #f54b7b;
+  }
+  
+  /* Botón para agregar notas */
   .add-note-button {
-    background-color: #f76c9e;  /* Rosa */
+    background-color: #f76c9e;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    margin-top: 10px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    margin-top: 15px;
+    width: 100%;
     transition: all 0.3s ease;
   }
   
   .add-note-button:hover {
-    background-color: #f54b7b; /* Rosa más oscuro */
-    transform: scale(1.1); /* Animación */
+    background-color: #f54b7b;
+    transform: scale(1.05);
   }
   
-  .notas-container {
+  /* Lista de notas */
+  .notes-list {
     margin-top: 20px;
   }
   
-  .nota {
-    background-color: white;
-    padding: 10px;
+  .note {
+    background-color: #f8c6d4;
+    padding: 15px;
     margin-bottom: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
   }
   
-  .nota small {
+  .note:hover {
+    transform: scale(1.03);
+    background-color: #f54b7b;
+    color: white;
+  }
+  
+  .note p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .note small {
     display: block;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #888;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    color: #555;
+  }
+  
+  /* Botón de volver al inicio */
+  .back-button {
+    background-color: #f76c9e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #f54b7b;
+    transform: scale(1.05);
+  }
+  
+  /* Estilo del modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content h3 {
+    font-size: 1.8rem;
+    color: #f76c9e;
+    margin-bottom: 15px;
+  }
+  
+  .modal-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content small {
+    display: block;
+    margin-bottom: 15px;
+    color: #777;
+  }
+  
+  .close-modal {
+    background-color: #f76c9e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .close-modal:hover {
+    background-color: #f54b7b;
   }
   

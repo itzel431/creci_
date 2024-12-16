@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './Login';
-import Diario from './Diario';  // Importamos el componente Diario
-import logo from './images/logocreci.jpg';  // Importar el logo desde src/images
+import Diario from './Diario';  
+import Momentos from './Momentos';  // Importamos el componente Momentos
+import logo from './images/logocreci.jpg';  
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -42,20 +43,33 @@ function App() {
           <p>Acompañándote en el arte de ser mamá</p>
         </header>
 
+        {/* Secciones del menú principal */}
         <div className="app-sections">
           <Link to="/diario">
             <div className="section">Diario</div>
           </Link>
-          <div className="section">Momentos</div>
-          <div className="section">Salud</div>
-          <div className="section">Lactancia</div>
+          <Link to="/momentos">
+            <div className="section">Momentos</div>
+          </Link>
+          <Link to="/salud">
+            <div className="section">Salud</div>
+          </Link>
+          <Link to="/lactancia">
+            <div className="section">Lactancia</div>
+          </Link>
           <div className="section">Crecimiento</div>
-          <div className="section">WhatsApp</div>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="whatsapp-button">
+            WhatsApp
+          </a>
         </div>
 
-        {/* Rutas para las páginas */}
+        {/* Rutas */}
         <Routes>
           <Route path="/diario" element={<Diario />} />
+          <Route path="/momentos" element={<Momentos />} />
+          {/* Aquí podrías agregar otras rutas futuras */}
+          {/* <Route path="/salud" element={<Salud />} /> */}
+          {/* <Route path="/lactancia" element={<Lactancia />} /> */}
         </Routes>
       </div>
     </Router>
