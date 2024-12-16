@@ -5,7 +5,8 @@ import Login from './Login';
 import Diario from './Diario';  
 import Momentos from './Momentos';  
 import Salud from './Salud';  
-import Lactancia from './Lactancia';  // Importamos el componente Lactancia
+import Lactancia from './Lactancia';  
+import Crecimiento from './Crecimiento';  // Importamos el componente Crecimiento
 import logo from './images/logocreci.jpg';  
 
 function App() {
@@ -59,7 +60,9 @@ function App() {
           <Link to="/lactancia">
             <div className="section">Lactancia</div>
           </Link>
-          <div className="section">Crecimiento</div>
+          <Link to="/crecimiento">
+            <div className="section">Crecimiento</div>
+          </Link>
           <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="whatsapp-button">
             WhatsApp
           </a>
@@ -71,6 +74,7 @@ function App() {
           <Route path="/momentos" element={<Momentos />} />
           <Route path="/salud" element={<Salud />} />
           <Route path="/lactancia" element={<Lactancia />} />
+          <Route path="/crecimiento" element={<Crecimiento />} />
         </Routes>
       </div>
     </Router>
