@@ -6,7 +6,7 @@ import Diario from './Diario';
 import Momentos from './Momentos';  
 import Salud from './Salud';  
 import Lactancia from './Lactancia';  
-import Crecimiento from './Crecimiento';  // Importamos el componente Crecimiento
+import Crecimiento from './Crecimiento';  
 import logo from './images/logocreci.jpg';  
 
 function App() {
@@ -49,22 +49,47 @@ function App() {
         {/* Secciones del menú principal */}
         <div className="app-sections">
           <Link to="/diario">
-            <div className="section">Diario</div>
+            <div className="section">
+              <span>📔</span>
+              <p>Diario</p>
+            </div>
           </Link>
+
           <Link to="/momentos">
-            <div className="section">Momentos</div>
+            <div className="section">
+              <span>📷</span>
+              <p>Momentos</p>
+            </div>
           </Link>
+
           <Link to="/salud">
-            <div className="section">Salud</div>
+            <div className="section">
+              <span>❤️‍🩹</span>
+              <p>Salud</p>
+            </div>
           </Link>
+
           <Link to="/lactancia">
-            <div className="section">Lactancia</div>
+            <div className="section">
+              <span>🍼</span>
+              <p>Lactancia</p>
+            </div>
           </Link>
+
           <Link to="/crecimiento">
-            <div className="section">Crecimiento</div>
+            <div className="section">
+              <span>📏</span>
+              <p>Crecimiento</p>
+            </div>
           </Link>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="whatsapp-button">
-            WhatsApp
+
+          <a 
+            href="https://wa.me/1234567890" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="whatsapp-button">
+            <span>📲</span>
+            <p>WhatsApp</p>
           </a>
         </div>
 
