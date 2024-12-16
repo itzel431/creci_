@@ -48,46 +48,36 @@ function App() {
 
         {/* Secciones del menú principal */}
         <div className="app-sections">
-          <Link to="/diario">
-            <div className="section">
-              <span>📔</span>
-              <p>Diario</p>
-            </div>
+          <Link to="/diario" className="section">
+            <span>📔</span>
+            <p>Diario</p>
           </Link>
 
-          <Link to="/momentos">
-            <div className="section">
-              <span>📷</span>
-              <p>Momentos</p>
-            </div>
+          <Link to="/momentos" className="section">
+            <span>📷</span>
+            <p>Momentos</p>
           </Link>
 
-          <Link to="/salud">
-            <div className="section">
-              <span>❤️‍🩹</span>
-              <p>Salud</p>
-            </div>
+          <Link to="/salud" className="section">
+            <span>❤️‍🩹</span>
+            <p>Salud</p>
           </Link>
 
-          <Link to="/lactancia">
-            <div className="section">
-              <span>🍼</span>
-              <p>Lactancia</p>
-            </div>
+          <Link to="/lactancia" className="section">
+            <span>🍼</span>
+            <p>Lactancia</p>
           </Link>
 
-          <Link to="/crecimiento">
-            <div className="section">
-              <span>📏</span>
-              <p>Crecimiento</p>
-            </div>
+          <Link to="/crecimiento" className="section">
+            <span>📏</span>
+            <p>Crecimiento</p>
           </Link>
 
           <a 
             href="https://wa.me/1234567890" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="whatsapp-button">
+            className="whatsapp-button section">
             <span>📲</span>
             <p>WhatsApp</p>
           </a>
