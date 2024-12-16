@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import './App.css';  // Para los estilos del encabezado y los apartados
-import Login from './Login';  // Importamos el componente Login
+import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Login from './Login';
+import Diario from './Diario';  // Importamos el componente Diario
 import logo from './images/logocreci.jpg';  // Importar el logo desde src/images
-import background from './images/background.jpg';  // Importar la imagen de fondo
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [showIntro, setShowIntro] = useState(true);  // Estado para mostrar la pantalla inicial
+  const [showIntro, setShowIntro] = useState(true);
 
   const handleLogin = (username, password) => {
     if (username === 'admin' && password === '1234') {
@@ -17,7 +18,7 @@ function App() {
   };
 
   const handleStart = () => {
-    setShowIntro(false);  // Ocultar la pantalla inicial y mostrar el login
+    setShowIntro(false);
   };
 
   if (showIntro) {
@@ -34,21 +35,30 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Creci</h1>
-        <p>Acompañándote en el arte de ser mamá</p>
-      </header>
+    <Router>
+      <div className="app">
+        <header className="app-header">
+          <h1>Creci</h1>
+          <p>Acompañándote en el arte de ser mamá</p>
+        </header>
 
-      <div className="app-sections">
-        <div className="section">Diario</div>
-        <div className="section">Momentos</div>
-        <div className="section">Salud</div>
-        <div className="section">Lactancia</div>
-        <div className="section">Crecimiento</div>
-        <div className="section">WhatsApp</div>
+        <div className="app-sections">
+          <Link to="/diario">
+            <div className="section">Diario</div>
+          </Link>
+          <div className="section">Momentos</div>
+          <div className="section">Salud</div>
+          <div className="section">Lactancia</div>
+          <div className="section">Crecimiento</div>
+          <div className="section">WhatsApp</div>
+        </div>
+
+        {/* Rutas para las páginas */}
+        <Routes>
+          <Route path="/diario" element={<Diario />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 
