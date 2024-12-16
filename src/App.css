@@ -35,6 +35,7 @@
   background-color: #f54b7b; 
 }
 
+/* Encabezado */
 .app-header {
   background-image: url('./images/background.jpg');
   background-size: cover;
@@ -57,6 +58,17 @@
   font-weight: 400; 
 }
 
+/* Fondo general de todo el cuerpo de la app (excepto el encabezado) */
+.app {
+  background-image: url('./images/OIEP.jpg'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Se asegura de cubrir todo el alto */
+  padding-bottom: 20px; /* Espacio para que no se corte el fondo */
+}
+
+/* Secciones de los botones */
 .app-sections {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -66,7 +78,7 @@
 }
 
 .section {
-  background-color: #f8c6d4; 
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
   text-align: center;
   padding: 30px;
   border-radius: 15px;
@@ -79,6 +91,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-decoration: none !important; 
 }
 
 .section:hover {
@@ -92,6 +105,13 @@
   margin-bottom: 10px;
 }
 
+.section p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
 .whatsapp-button {
   background-color: #25d366;
   color: white;
@@ -103,7 +123,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
+  text-decoration: none !important; 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.whatsapp-button span {
+  font-size: 2.5rem;
+  margin-right: 10px;
 }
 
 .whatsapp-button:hover {
@@ -157,4 +183,29 @@ button.back-button {
 button.back-button:hover {
   transform: scale(1.1);
   background-color: #f54b7b;
+}
+
+/* Elimina subrayado de los enlaces */
+.app-sections a, 
+.app-sections a:link, 
+.app-sections a:visited, 
+.app-sections a:hover, 
+.app-sections a:active, 
+.app-sections .section, 
+.whatsapp-button {
+  text-decoration: none !important; 
+}
+
+/* Alinear el emoji y el texto en los botones */
+.section span {
+  font-size: 2.5rem; 
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
 }
