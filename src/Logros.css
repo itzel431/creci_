@@ -1,0 +1,55 @@
+.logros-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .back-button {
+    background-color: #f76c9e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.1);
+    background-color: #f54b7b;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .logros-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .logro-item {
+    background-color: #f8c6d4;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logro-item:hover {
+    background-color: #f54b7b;
+    color: white;
+  }
+  
+  .logro-item.completed {
+    background-color: #4CAF50;
+    color: white;
+  }
+  

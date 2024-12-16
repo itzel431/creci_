@@ -1,0 +1,89 @@
+/* Fondo exclusivo de la página premium */
+.premium-container {
+    background-image: url('./images/premium-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .premium-container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .premium-container p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .premium-benefits {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .premium-benefits h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .premium-benefits ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .premium-benefits ul li::before {
+    content: '⭐️'; /* Icono de estrella antes de cada beneficio */
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .upgrade-button {
+    background-color: #f76c9e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .upgrade-button:hover {
+    background-color: #f54b7b;
+    transform: scale(1.05);
+  }
+  
+  .back-button {
+    background-color: #f76c9e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #f54b7b;
+    transform: scale(1.05);
+  }
+  
